@@ -1,0 +1,70 @@
+{
+    "intents":[
+        {
+            "title": "hello",
+            "desc": "intent for welcome",
+            "examples": [
+                {
+                  "text": "hello"
+                },
+                {
+                  "text": "hey"
+                },
+                {
+                  "text": "hei"
+                },
+                {
+                  "text": "hi there"
+                },
+                {
+                  "text": "yo"
+                }
+            ],
+            "responses":[
+              {
+                "text": "hello"
+              },
+              {
+                "text": "hi"
+              },
+              {
+                "text": "hey"
+              }
+              
+
+            ]
+        },
+        {
+            "title": "greetings",
+            "desc": "intent for greetings like how are you",
+            "examples": [
+                {
+                  "text": "how's going on"
+                },
+                {
+                  "text": "whats going on"
+                },
+                {
+                  "text": "how do you do today"
+                },
+                {
+                  "text": "how are you"
+                }
+            ],
+            "responses": [
+              {
+                "text": "I am fine, Thank you"
+              },
+              {
+                "text": "I am fine"
+              },
+              {
+                "text": "I am alright"
+              },
+              {
+                "text": "I am good"
+              }
+            ]
+        }  
+    ]
+}
