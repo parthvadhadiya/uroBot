@@ -6,13 +6,16 @@ import pickle
 import numpy as np
 
 import tensorflow
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 from tensorflow.keras.models import load_model
-model = load_model('chatbot_model.h5')
+model_path = 'models/'
+model = load_model(model_path+'chatbot_model.h5')
 import json
 import random
 intents = json.loads(open('/media/parth/DATA7/uroBot/input.json').read())
-words = pickle.load(open('words.pkl','rb'))
-classes = pickle.load(open('classes.pkl','rb'))
+words = pickle.load(open(model_path+'words.pkl','rb'))
+classes = pickle.load(open(model_path+'classes.pkl','rb'))
 
 
 def clean_up_sentence(sentence):
@@ -64,7 +67,7 @@ def chatbot_response(msg):
     return res
 
 def send():
-    msg = "how you doing"
+    msg = "hey guy"
     res = chatbot_response(msg)
     print(res)
 
