@@ -67,7 +67,7 @@ def chatbot_response(msg):
     return res
 
 def send():
-    msg = "hey guy"
+    msg = "order something for me"
     res = chatbot_response(msg)
     print(res)
 

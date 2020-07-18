@@ -1,9 +1,10 @@
-from bot_engine.Helper import BotHelper, ANN
+from bot_engine.intentHelper import BotHelper, ANN
 import json
 import random
 import numpy as np
+# from bot_engine.entityHelper import baseNER
 
-if __name__ == "__main__":
+def intentDetection():
     ignore_words = ['?', '!']
     
     data_file = open('/media/parth/DATA7/uroBot/input.json').read()
@@ -46,3 +47,13 @@ if __name__ == "__main__":
     epochs = 200
     neuralNetwork.train(model, 'chatbot_model.h5', train_x, train_y, epochs)
     print("model created")
+
+
+
+
+if __name__ == "__main__":
+    intentDetection()
+
+    
+
+
