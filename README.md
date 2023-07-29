@@ -27,7 +27,7 @@ To use UroBot in your project, follow these steps:
 
 1. **Clone the repository:** Start by cloning this repository to your local machine using `git`.
 ```
-git clone https://github.com/your-username/urobot.git
+git clone https://github.com/parthvadhadiya/urobot.git
 cd urobot
 ```
 
